@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b1429"/>
+      <stop offset="100%" stop-color="#3d2566"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cd5ff8"/>
+      <stop offset="100%" stop-color="#c770f0"/>
+    </linearGradient>
+    <radialGradient id="glowGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#be50f4" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#be50f4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="400" height="400" rx="72" fill="url(#bgGrad)"/>
+  <circle cx="200" cy="185" r="150" fill="url(#glowGrad)"/>
+
+  <!-- circuit nodes -->
+  <g stroke="#c770f0" stroke-opacity="0.35" fill="none" stroke-width="2">
+    <path d="M60 320 H150"/>
+    <path d="M250 320 H340"/>
+    <path d="M60 90 H110 V60"/>
+    <path d="M290 90 H340 V120"/>
+  </g>
+  <circle cx="150" cy="320" r="4" fill="#cd5ff8"/>
+  <circle cx="250" cy="320" r="4" fill="#cd5ff8"/>
+  <circle cx="110" cy="60" r="4" fill="#cd5ff8"/>
+  <circle cx="340" cy="120" r="4" fill="#cd5ff8"/>
+
+  <!-- head -->
+  <circle cx="200" cy="165" r="58" fill="#2a1a45" stroke="#c770f0" stroke-opacity="0.5" stroke-width="2"/>
+
+  <!-- face -->
+  <circle cx="182" cy="158" r="6" fill="#f5f5f5"/>
+  <circle cx="218" cy="158" r="6" fill="#f5f5f5"/>
+  <path d="M186 186 Q200 200 214 186" stroke="#c770f0" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M160 138 Q180 122 200 124" stroke="#1b1429" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M240 138 Q220 122 200 124" stroke="#1b1429" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- hair -->
+  <path d="M140 150 Q140 96 200 92 Q260 96 260 150" fill="#1b1429"/>
+  <path d="M146 138 Q158 110 200 104" stroke="#c770f0" stroke-width="3" fill="none" stroke-opacity="0.6"/>
+
+  <!-- body / hoodie -->
+  <path d="M128 232 Q200 196 272 232 L292 340 Q200 360 108 340 Z" fill="#3d2566" stroke="#c770f0" stroke-opacity="0.5" stroke-width="2"/>
+  <path d="M200 224 V344" stroke="#c770f0" stroke-opacity="0.4" stroke-width="2"/>
+  <path d="M162 246 L200 262" stroke="#c770f0" stroke-opacity="0.5" stroke-width="2"/>
+  <path d="M238 246 L200 262" stroke="#c770f0" stroke-opacity="0.5" stroke-width="2"/>
+
+  <!-- code brackets on hoodie -->
+  <text x="200" y="305" text-anchor="middle" font-family="monospace" font-size="20" font-weight="bold" fill="#be50f4">&lt;/&gt;</text>
+
+  <!-- floating dev icons -->
+  <g font-family="monospace" font-size="22" text-anchor="middle">
+    <text x="88" y="210" fill="#cd5ff8">{} </text>
+    <text x="312" y="210" fill="#c770f0">☁</text>
+    <text x="92" y="150" fill="#c770f0" opacity="0.8">λ</text>
+    <text x="308" y="150" fill="#cd5ff8" opacity="0.8">&lt;/&gt;</text>
+  </g>
+
+  <circle cx="70" cy="70" r="3" fill="#cd5ff8"/>
+  <circle cx="330" cy="330" r="3" fill="#cd5ff8"/>
+</svg>
