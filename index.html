@@ -6,24 +6,37 @@
   <title>Ashish Kumar | Software Developer | Backend & Cloud</title>
 
   <!-- SEO & OpenGraph Meta Tags -->
-  <meta name="description" content="Portfolio of Ashish Kumar, a Computer Science undergraduate focused on backend development, cloud computing, AWS, REST APIs and full-stack applications." />
-  <meta name="keywords" content="Ashish Kumar, Software Developer, Backend Developer, AWS Cloud Engineer, Python, Java, Node.js, REST API, Portfolio" />
+  <meta name="description" content="Ashish Kumar — backend & cloud software engineer. B.Tech CS undergraduate building REST APIs, full-stack and AI-powered applications with Python, Node.js, React, MongoDB/PostgreSQL and AWS. Open to internships and entry-level roles." />
+  <meta name="keywords" content="Ashish Kumar, Software Developer, Backend Developer, Full-Stack Developer, Cloud Engineer, AWS, Python, Java, Node.js, React, REST API, Portfolio" />
   <meta name="author" content="Ashish Kumar" />
+  <meta name="theme-color" content="#140f23" />
 
-  <meta property="og:title" content="Ashish Kumar | Software Developer | Backend & Cloud" />
-  <meta property="og:description" content="Computer Science undergraduate building scalable backend systems, APIs and cloud-deployed applications." />
+  <meta property="og:title" content="Ashish Kumar | Backend & Cloud Software Engineer" />
+  <meta property="og:description" content="Backend & cloud software engineer building REST APIs, full-stack and AI-powered applications. Open to internships and entry-level roles." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ashish9123.github.io/portfolio/" />
 
-  <!-- Fonts: Outfit & PT Mono (Soumyajit Theme) -->
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Fonts: Outfit & PT Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=PT+Mono&display=swap" rel="stylesheet" />
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
+  <noscript>
+    <style>
+      .reveal, .reveal-left, .reveal-right, .reveal-scale { opacity: 1; transform: none; }
+      .loading-screen { display: none; }
+    </style>
+  </noscript>
 </head>
 <body>
+
+  <!-- SKIP LINK (Accessibility) -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <!-- LOADING SCREEN -->
   <div id="loading-screen" class="loading-screen">
@@ -69,6 +82,7 @@
   <!-- MOBILE NAVIGATION DRAWER -->
   <div class="mobile-nav-overlay" id="mobile-nav-overlay" aria-hidden="true">
     <nav class="mobile-nav-drawer" aria-label="Mobile Navigation">
+      <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close Menu">✕</button>
       <a href="#about" class="mobile-nav-link">About</a>
       <a href="#skills" class="mobile-nav-link">Skills</a>
       <a href="#projects" class="mobile-nav-link">Projects</a>
@@ -79,7 +93,7 @@
     </nav>
   </div>
 
-  <main>
+  <main id="main-content">
     <!-- HERO SECTION -->
     <section class="home-section" id="home">
       <div class="container">
@@ -90,13 +104,13 @@
               <span>Open to Software Engineer & Cloud Internships / Entry-Level Roles</span>
             </div>
 
-            <h1 class="heading">
-              Hi There! <span class="wave" aria-hidden="true">👋</span>
-            </h1>
+            <h2 class="heading">Hi There, I'm</h2>
 
             <h1 class="heading-name">
-              I'M <span class="purple">ASHISH KUMAR</span>
+              <span class="purple">ASHISH KUMAR</span>
             </h1>
+
+            <div class="hero-role">Backend &amp; Cloud Software Engineer</div>
 
             <div class="typewriter-wrapper">
               <span class="typing-text" id="hero-typing"></span>
@@ -104,17 +118,19 @@
             </div>
 
             <p class="home-intro">
-              Computer Science undergraduate focused on backend development and cloud engineering. I build REST APIs, full-stack applications, and cloud-deployed systems using Python, Java, Node.js, and AWS.
+              B.Tech CS undergraduate specializing in backend development and cloud engineering. I build REST APIs, full-stack and AI-powered applications with Python, Node.js, React and AWS — and I ship them to production.
             </p>
 
             <div class="hero-tech-pills">
               <span class="tech-pill highlight">Python</span>
-              <span class="tech-pill highlight">Java</span>
               <span class="tech-pill highlight">Node.js</span>
-              <span class="tech-pill highlight">AWS EC2 / S3</span>
+              <span class="tech-pill highlight">Express.js</span>
+              <span class="tech-pill highlight">React</span>
               <span class="tech-pill highlight">REST APIs</span>
-              <span class="tech-pill">SQL / MySQL</span>
+              <span class="tech-pill">FastAPI</span>
+              <span class="tech-pill">MongoDB / PostgreSQL</span>
               <span class="tech-pill">Docker</span>
+              <span class="tech-pill">AWS</span>
               <span class="tech-pill">Git</span>
             </div>
 
@@ -167,28 +183,28 @@
         <div class="about-grid">
           <div class="card about-narrative reveal-left">
             <p>
-              I build <strong>backend and cloud-based applications</strong> with Python, Java, Node.js, and AWS. My projects include REST APIs, authentication systems, database-backed platforms, and cloud-hosted environments.
+              I build <strong>backend, full-stack and AI-powered applications</strong> with Python, Node.js, React and cloud platforms. My projects include REST APIs, authentication systems, database-backed platforms, AI chatbots and cloud-hosted deployments — several with live production demos.
             </p>
             <p>
-              Currently pursuing my <strong>B.Tech in Computer Science & Engineering</strong> at Lovely Professional University, I focus on turning complex requirements into structured, reliable software. I enjoy modeling relational schemas, designing modular controller layers, and automating server deployments.
+              Currently pursuing my <strong>B.Tech in Computer Science & Engineering</strong> at Lovely Professional University, I focus on turning requirements into structured, reliable software — modeling relational schemas, designing modular API layers, and deploying services to the cloud.
             </p>
 
             <div class="highlight-box-grid">
               <div class="highlight-box">
-                <div class="highlight-box-title">Backend Architecture</div>
-                <div class="highlight-box-desc">Building REST APIs with Flask & Express, handling auth, sessions, and route validation.</div>
+                <div class="highlight-box-title">Backend & API Development</div>
+                <div class="highlight-box-desc">Building REST APIs with Flask, FastAPI and Express.js, with clean controller layers and data validation.</div>
               </div>
               <div class="highlight-box">
-                <div class="highlight-box-title">Cloud Deployment</div>
-                <div class="highlight-box-desc">Hosting applications on AWS EC2, configuring NGINX reverse proxies, and S3 file storage.</div>
+                <div class="highlight-box-title">AI-Powered Applications</div>
+                <div class="highlight-box-desc">Integrating OpenAI and Google Gemini APIs into chatbots, assistants and prediction tools.</div>
               </div>
               <div class="highlight-box">
                 <div class="highlight-box-title">Database Engineering</div>
-                <div class="highlight-box-desc">Designing normalized SQL tables (MySQL, PostgreSQL, SQLite) and MongoDB schemas.</div>
+                <div class="highlight-box-desc">Designing normalized SQL schemas (PostgreSQL, MySQL, SQLite) and MongoDB models with Mongoose.</div>
               </div>
               <div class="highlight-box">
-                <div class="highlight-box-title">DevOps & Tooling</div>
-                <div class="highlight-box-desc">Containerizing apps with Docker, managing source control with Git/GitHub, and Linux basics.</div>
+                <div class="highlight-box-title">Cloud & DevOps</div>
+                <div class="highlight-box-desc">Deploying on AWS, Render and Vercel; containerizing with Docker and managing source control with Git.</div>
               </div>
             </div>
           </div>
@@ -211,8 +227,8 @@
             <div class="info-item">
               <div class="info-icon">☁️</div>
               <div>
-                <div class="info-label">Primary Cloud Platform</div>
-                <div class="info-value">Amazon Web Services (AWS)</div>
+                <div class="info-label">Deployment Platforms</div>
+                <div class="info-value">AWS, Render, Vercel</div>
               </div>
             </div>
             <div class="info-item">
@@ -249,6 +265,7 @@
               <span class="skill-tag featured">JavaScript (ES6+)</span>
               <span class="skill-tag">C</span>
               <span class="skill-tag">SQL</span>
+              <span class="skill-tag">TypeScript</span>
             </div>
           </div>
 
@@ -261,41 +278,46 @@
             <div class="skills-pill-list">
               <span class="skill-tag featured">Node.js</span>
               <span class="skill-tag featured">Express.js</span>
-              <span class="skill-tag featured">Flask</span>
               <span class="skill-tag featured">RESTful APIs</span>
+              <span class="skill-tag">Flask</span>
+              <span class="skill-tag">FastAPI</span>
+              <span class="skill-tag">Microservices Architecture</span>
               <span class="skill-tag">JWT Authentication</span>
               <span class="skill-tag">Middleware / Auth</span>
             </div>
           </div>
 
-          <!-- Category 3: Cloud & DevOps -->
+          <!-- Category 3: Databases -->
           <div class="skills-category-card reveal stagger-3">
-            <div class="category-header">
-              <div class="category-icon">☁️</div>
-              <h3 class="category-title">Cloud & DevOps</h3>
-            </div>
-            <div class="skills-pill-list">
-              <span class="skill-tag featured">AWS EC2</span>
-              <span class="skill-tag featured">AWS S3</span>
-              <span class="skill-tag featured">Docker</span>
-              <span class="skill-tag">Git / GitHub</span>
-              <span class="skill-tag">Linux / Bash</span>
-              <span class="skill-tag">NGINX Proxy</span>
-            </div>
-          </div>
-
-          <!-- Category 4: Databases -->
-          <div class="skills-category-card reveal stagger-4">
             <div class="category-header">
               <div class="category-icon">🗄️</div>
               <h3 class="category-title">Databases & Storage</h3>
             </div>
             <div class="skills-pill-list">
-              <span class="skill-tag featured">MySQL</span>
+              <span class="skill-tag featured">MongoDB</span>
               <span class="skill-tag featured">PostgreSQL</span>
-              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">MySQL</span>
               <span class="skill-tag">SQLite</span>
+              <span class="skill-tag">Mongoose (ODM)</span>
+              <span class="skill-tag">SQLAlchemy (ORM)</span>
               <span class="skill-tag">Relational Modeling</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Cloud & DevOps -->
+          <div class="skills-category-card reveal stagger-4">
+            <div class="category-header">
+              <div class="category-icon">☁️</div>
+              <h3 class="category-title">Cloud & DevOps</h3>
+            </div>
+            <div class="skills-pill-list">
+              <span class="skill-tag featured">AWS (EC2 / S3)</span>
+              <span class="skill-tag featured">Docker</span>
+              <span class="skill-tag">Render</span>
+              <span class="skill-tag">Vercel</span>
+              <span class="skill-tag">Git / GitHub</span>
+              <span class="skill-tag">Linux / Bash</span>
+              <span class="skill-tag">GitHub Pages</span>
             </div>
           </div>
 
@@ -306,8 +328,9 @@
               <h3 class="category-title">Frontend Engineering</h3>
             </div>
             <div class="skills-pill-list">
+              <span class="skill-tag featured">React (Vite)</span>
               <span class="skill-tag">HTML5</span>
-              <span class="skill-tag">CSS3 (Grid/Flexbox)</span>
+              <span class="skill-tag">CSS3 (Grid / Flexbox)</span>
               <span class="skill-tag">JavaScript DOM</span>
               <span class="skill-tag">Fetch API / AJAX</span>
             </div>
@@ -320,9 +343,12 @@
               <h3 class="category-title">AI & Machine Learning</h3>
             </div>
             <div class="skills-pill-list">
-              <span class="skill-tag">Natural Language Processing (NLP)</span>
-              <span class="skill-tag">Python AI Libraries</span>
-              <span class="skill-tag">Intent Classification</span>
+              <span class="skill-tag featured">OpenAI API</span>
+              <span class="skill-tag featured">Google Gemini API</span>
+              <span class="skill-tag">NLP & Intent Recognition</span>
+              <span class="skill-tag">AI Chatbots</span>
+              <span class="skill-tag">Image-Based Classification</span>
+              <span class="skill-tag">Prediction Systems</span>
             </div>
           </div>
         </div>
@@ -334,35 +360,69 @@
       <div class="container">
         <div class="section-header reveal">
           <div class="section-eyebrow">// 03. Engineering Work</div>
-          <h2 class="section-title">My Recent <span class="purple">Work</span></h2>
-          <p class="section-sub">Demonstrating backend development, API integration, cloud deployment, and system architecture.</p>
+          <h2 class="section-title">Projects — <span class="purple">Live &amp; Production-Deployed</span></h2>
+          <p class="section-sub">Real applications with public source code and working live demos: backend APIs, full-stack apps and AI-powered systems.</p>
+        </div>
+
+        <!-- GitHub at a Glance (API-backed with verified fallback) -->
+        <div class="gh-stats-band reveal" id="gh-stats-band">
+          <div class="gh-stat">
+            <div class="gh-stat-value" id="gh-stat-repos">9</div>
+            <div class="gh-stat-label">Public Repositories</div>
+          </div>
+          <div class="gh-stat">
+            <div class="gh-stat-value">5</div>
+            <div class="gh-stat-label">Projects with Live Demos</div>
+          </div>
+          <div class="gh-stat">
+            <div class="gh-stat-value" id="gh-stat-since">2022</div>
+            <div class="gh-stat-label">GitHub Member Since</div>
+          </div>
+          <a href="https://github.com/Ashish9123" target="_blank" rel="noopener" class="btn btn-outline gh-stats-cta">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            <span>Explore My GitHub</span>
+          </a>
         </div>
 
         <!-- Project Category Filter Bar -->
-        <div class="project-filter-bar reveal" role="tablist" aria-label="Filter Projects">
-          <button class="project-filter-btn active" data-filter="all">All Projects (6)</button>
-          <button class="project-filter-btn" data-filter="backend">Backend & APIs</button>
-          <button class="project-filter-btn" data-filter="cloud">Cloud & DevOps</button>
-          <button class="project-filter-btn" data-filter="fullstack">Full-Stack & DB</button>
+        <div class="project-filter-bar reveal" role="group" aria-label="Filter Projects by category">
+          <button class="project-filter-btn active" data-filter="all" aria-pressed="true">All Projects (5)</button>
+          <button class="project-filter-btn" data-filter="backend" aria-pressed="false">Backend &amp; APIs (2)</button>
+          <button class="project-filter-btn" data-filter="ai" aria-pressed="false">AI &amp; Full-Stack (3)</button>
         </div>
 
         <div class="projects-grid">
           <!-- Project 1: Bug Tracker -->
           <article class="project-card reveal stagger-1" data-category="backend">
+            <div class="project-banner" aria-hidden="true">
+              <svg viewBox="0 0 800 200" role="presentation" focusable="false" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                  <linearGradient id="pb-bug" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#3d2566"/><stop offset="1" stop-color="#140f23"/>
+                  </linearGradient>
+                </defs>
+                <rect width="800" height="200" fill="url(#pb-bug)"/>
+                <circle cx="690" cy="60" r="120" fill="#cd5ff8" opacity="0.10"/>
+                <text x="400" y="110" text-anchor="middle" font-family="monospace" font-size="64">🐞</text>
+                <text x="400" y="165" text-anchor="middle" font-family="monospace" font-size="22" fill="#c770f0">bug-tracker</text>
+                <text x="30" y="40" font-family="monospace" font-size="18" fill="#7a5a9e">Flask · SQLite</text>
+              </svg>
+            </div>
             <div class="project-top">
-              <span class="project-badge">Backend & Web App</span>
+              <span class="project-badge">Backend &amp; Web App</span>
+              <span class="project-badge project-badge-live">LIVE</span>
             </div>
             <h3 class="project-title">Bug Tracker Web Application</h3>
             <p class="project-problem">
-              Centralized defect logging system to streamline issue reporting, status pipelines, and software bug assignment.
+              <strong>Problem:</strong> Bug reports were tracked in unorganized spreadsheets with no access control, status visibility or audit trail.
             </p>
 
             <div class="project-key-features">
-              <div class="feature-list-title">Key Implementation Features</div>
+              <div class="feature-list-title">Solution &amp; Key Features</div>
               <ul class="feature-list">
-                <li class="feature-item"><span>User Authentication & Session Security</span></li>
-                <li class="feature-item"><span>Issue CRUD Lifecycle (Open → Review → Resolved)</span></li>
-                <li class="feature-item"><span>Relational SQLite Database Storage</span></li>
+                <li class="feature-item"><span>User authentication with session-protected routes</span></li>
+                <li class="feature-item"><span>Full CRUD bug lifecycle management</span></li>
+                <li class="feature-item"><span>Relational SQLite storage with structured backend</span></li>
               </ul>
             </div>
 
@@ -370,196 +430,247 @@
               <span class="stack-tag">Python</span>
               <span class="stack-tag">Flask</span>
               <span class="stack-tag">SQLite</span>
-              <span class="stack-tag">REST API</span>
+              <span class="stack-tag">HTML / CSS</span>
             </div>
 
             <div class="project-card-actions">
-              <a href="https://github.com/Ashish9123/bug-tracker-web-app" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
-                <span>GitHub ↗</span>
+              <a href="https://github.com/Ashish9123/bug-tracker" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                <span>GitHub</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+              <a href="https://bug-tracker-ashish16.vercel.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <span>Live Demo</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
               </a>
               <button class="btn btn-secondary btn-sm" onclick="openProjectModal('bug-tracker')">
-                <span>View Details 🔍</span>
+                <span>Details</span>
               </button>
             </div>
           </article>
 
-          <!-- Project 2: AI Chatbot AWS -->
-          <article class="project-card reveal stagger-2" data-category="cloud">
-            <div class="project-top">
-              <span class="project-badge">Cloud & AI Service</span>
+          <!-- Project 2: AI Chatbot -->
+          <article class="project-card reveal stagger-2" data-category="ai">
+            <div class="project-banner" aria-hidden="true">
+              <svg viewBox="0 0 800 200" role="presentation" focusable="false" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                  <linearGradient id="pb-chat" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#3d2566"/><stop offset="1" stop-color="#140f23"/>
+                  </linearGradient>
+                </defs>
+                <rect width="800" height="200" fill="url(#pb-chat)"/>
+                <circle cx="110" cy="160" r="120" fill="#c770f0" opacity="0.10"/>
+                <text x="400" y="110" text-anchor="middle" font-family="monospace" font-size="64">💬</text>
+                <text x="400" y="165" text-anchor="middle" font-family="monospace" font-size="22" fill="#c770f0">chatbot-AI</text>
+                <text x="770" y="40" text-anchor="end" font-family="monospace" font-size="18" fill="#7a5a9e">React · Gemini</text>
+              </svg>
             </div>
-            <h3 class="project-title">AI Chatbot & NLP Assistant</h3>
+            <div class="project-top">
+              <span class="project-badge">AI Application</span>
+              <span class="project-badge project-badge-live">LIVE</span>
+            </div>
+            <h3 class="project-title">AI Chatbot — Gemini Powered</h3>
             <p class="project-problem">
-              NLP-powered conversational bot deployed on AWS EC2 behind an NGINX reverse proxy for scalable cloud execution.
+              <strong>Problem:</strong> Users need instant, natural-language answers without navigating a support team or documentation.
             </p>
 
             <div class="project-key-features">
-              <div class="feature-list-title">Key Implementation Features</div>
+              <div class="feature-list-title">Solution &amp; Key Features</div>
               <ul class="feature-list">
-                <li class="feature-item"><span>NLP Intent Recognition Engine</span></li>
-                <li class="feature-item"><span>Deployed on Linux AWS EC2 Server</span></li>
-                <li class="feature-item"><span>NGINX Reverse Proxy & Gunicorn WSGI</span></li>
+                <li class="feature-item"><span>Real-time chat with Google Gemini AI integration</span></li>
+                <li class="feature-item"><span>Clean responsive React UI with fast responses</span></li>
+                <li class="feature-item"><span>NLP-based query understanding</span></li>
               </ul>
             </div>
 
             <div class="project-stack">
-              <span class="stack-tag">Python</span>
-              <span class="stack-tag">NLP</span>
-              <span class="stack-tag">AWS EC2</span>
-              <span class="stack-tag">Flask</span>
-              <span class="stack-tag">NGINX</span>
+              <span class="stack-tag">React</span>
+              <span class="stack-tag">Vite</span>
+              <span class="stack-tag">Gemini API</span>
+              <span class="stack-tag">Render</span>
             </div>
 
             <div class="project-card-actions">
-              <a href="https://github.com/Ashish9123/ai-chatbot-aws" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
-                <span>GitHub ↗</span>
+              <a href="https://github.com/Ashish9123/chatbot-AI" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                <span>GitHub</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
               </a>
-              <button class="btn btn-secondary btn-sm" onclick="openProjectModal('ai-chatbot')">
-                <span>View Details 🔍</span>
+              <a href="https://chatbot-ai-vkk1.onrender.com" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <span>Live Demo</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+              <button class="btn btn-secondary btn-sm" onclick="openProjectModal('chatbot-ai')">
+                <span>Details</span>
               </button>
             </div>
           </article>
 
-          <!-- Project 3: Restaurant Platform -->
-          <article class="project-card reveal stagger-3" data-category="fullstack">
-            <div class="project-top">
-              <span class="project-badge">Full-Stack & Database</span>
+          <!-- Project 3: AgriPrecision AI -->
+          <article class="project-card reveal stagger-3" data-category="ai">
+            <div class="project-banner" aria-hidden="true">
+              <svg viewBox="0 0 800 200" role="presentation" focusable="false" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                  <linearGradient id="pb-agri" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#3d2566"/><stop offset="1" stop-color="#140f23"/>
+                  </linearGradient>
+                </defs>
+                <rect width="800" height="200" fill="url(#pb-agri)"/>
+                <circle cx="690" cy="170" r="120" fill="#34d399" opacity="0.08"/>
+                <text x="400" y="110" text-anchor="middle" font-family="monospace" font-size="64">🌱</text>
+                <text x="400" y="165" text-anchor="middle" font-family="monospace" font-size="22" fill="#c770f0">agriprecision-ai</text>
+                <text x="30" y="40" font-family="monospace" font-size="18" fill="#7a5a9e">OpenAI · TypeScript</text>
+              </svg>
             </div>
-            <h3 class="project-title">Restaurant Management & Reservation</h3>
+            <div class="project-top">
+              <span class="project-badge">AI &amp; Full-Stack</span>
+              <span class="project-badge project-badge-live">LIVE</span>
+            </div>
+            <h3 class="project-title">AgriPrecision AI</h3>
             <p class="project-problem">
-              Multi-feature platform for table reservations, online food order management, and ACID-compliant MySQL storage.
+              <strong>Problem:</strong> Farmers lack accessible, data-driven guidance for soil health, crop diagnosis and farming decisions.
             </p>
 
             <div class="project-key-features">
-              <div class="feature-list-title">Key Implementation Features</div>
+              <div class="feature-list-title">Solution &amp; Key Features</div>
               <ul class="feature-list">
-                <li class="feature-item"><span>Transactional Order & Reservation Engine</span></li>
-                <li class="feature-item"><span>MySQL Database Normalized Schema</span></li>
-                <li class="feature-item"><span>AWS S3 Static Asset Hosting</span></li>
+                <li class="feature-item"><span>AI-powered soil analysis and image-based crop classification</span></li>
+                <li class="feature-item"><span>Smart farming recommendations via OpenAI integration</span></li>
+                <li class="feature-item"><span>Voice assistant interface for hands-free usage</span></li>
               </ul>
             </div>
 
             <div class="project-stack">
-              <span class="stack-tag">Python</span>
-              <span class="stack-tag">Flask</span>
-              <span class="stack-tag">MySQL</span>
-              <span class="stack-tag">AWS S3</span>
+              <span class="stack-tag">React</span>
+              <span class="stack-tag">Vite / TS</span>
+              <span class="stack-tag">Node.js + Express</span>
+              <span class="stack-tag">OpenAI API</span>
+              <span class="stack-tag">Render</span>
             </div>
 
             <div class="project-card-actions">
-              <a href="https://github.com/Ashish9123/restaurant-management-platform" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
-                <span>GitHub ↗</span>
+              <a href="https://github.com/Ashish9123/agriprecision-ai" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                <span>GitHub</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
               </a>
-              <button class="btn btn-secondary btn-sm" onclick="openProjectModal('restaurant-platform')">
-                <span>View Details 🔍</span>
+              <a href="https://agriprecision-ai.onrender.com" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <span>Live Demo</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+              <button class="btn btn-secondary btn-sm" onclick="openProjectModal('agriprecision')">
+                <span>Details</span>
               </button>
             </div>
           </article>
 
-          <!-- Project 4: User Auth Service -->
+          <!-- Project 4: URL Shortener -->
           <article class="project-card reveal stagger-4" data-category="backend">
-            <div class="project-top">
-              <span class="project-badge">Security Microservice</span>
+            <div class="project-banner" aria-hidden="true">
+              <svg viewBox="0 0 800 200" role="presentation" focusable="false" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                  <linearGradient id="pb-url" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#3d2566"/><stop offset="1" stop-color="#140f23"/>
+                  </linearGradient>
+                </defs>
+                <rect width="800" height="200" fill="url(#pb-url)"/>
+                <circle cx="110" cy="50" r="120" fill="#cd5ff8" opacity="0.10"/>
+                <text x="400" y="110" text-anchor="middle" font-family="monospace" font-size="64">🔗</text>
+                <text x="400" y="165" text-anchor="middle" font-family="monospace" font-size="22" fill="#c770f0">url-shortener</text>
+                <text x="770" y="40" text-anchor="end" font-family="monospace" font-size="18" fill="#7a5a9e">Express · MongoDB</text>
+              </svg>
             </div>
-            <h3 class="project-title">User Authentication JWT Service</h3>
+            <div class="project-top">
+              <span class="project-badge">Backend &amp; REST API</span>
+              <span class="project-badge project-badge-live">LIVE</span>
+            </div>
+            <h3 class="project-title">URL Shortener Service</h3>
             <p class="project-problem">
-              Stateless authentication microservice handling user signup, salted password hashing, and signed JWT verification.
+              <strong>Problem:</strong> Long, unwieldy links are hard to share and track — a common pain point for teams and campaigns.
             </p>
 
             <div class="project-key-features">
-              <div class="feature-list-title">Key Implementation Features</div>
+              <div class="feature-list-title">Solution &amp; Key Features</div>
               <ul class="feature-list">
-                <li class="feature-item"><span>Signed JSON Web Token (JWT) Authorization</span></li>
-                <li class="feature-item"><span>Bcrypt Password Hashing & Salt Rounds</span></li>
-                <li class="feature-item"><span>MongoDB & Mongoose Validation Schema</span></li>
+                <li class="feature-item"><span>Short-code generation for long URLs</span></li>
+                <li class="feature-item"><span>MongoDB persistence with Mongoose models</span></li>
+                <li class="feature-item"><span>CORS-enabled Express REST API with redirect handling</span></li>
               </ul>
             </div>
 
             <div class="project-stack">
               <span class="stack-tag">Node.js</span>
-              <span class="stack-tag">Express</span>
-              <span class="stack-tag">JWT</span>
+              <span class="stack-tag">Express 5</span>
               <span class="stack-tag">MongoDB</span>
+              <span class="stack-tag">shortid</span>
+              <span class="stack-tag">Render</span>
             </div>
 
             <div class="project-card-actions">
-              <a href="https://github.com/Ashish9123/user-auth-jwt-service" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
-                <span>GitHub ↗</span>
+              <a href="https://github.com/Ashish9123/url-shortener" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                <span>GitHub</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
               </a>
-              <button class="btn btn-secondary btn-sm" onclick="openProjectModal('user-auth')">
-                <span>View Details 🔍</span>
+              <a href="https://url-shortener-keie.onrender.com" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <span>Live Demo</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+              <button class="btn btn-secondary btn-sm" onclick="openProjectModal('url-shortener')">
+                <span>Details</span>
               </button>
             </div>
           </article>
 
-          <!-- Project 5: Cloud Storage S3 -->
-          <article class="project-card reveal stagger-5" data-category="cloud">
-            <div class="project-top">
-              <span class="project-badge">Cloud Engineering</span>
+          <!-- Project 5: Finance Predictor -->
+          <article class="project-card reveal stagger-5" data-category="ai">
+            <div class="project-banner" aria-hidden="true">
+              <svg viewBox="0 0 800 200" role="presentation" focusable="false" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                  <linearGradient id="pb-fin" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#3d2566"/><stop offset="1" stop-color="#140f23"/>
+                  </linearGradient>
+                </defs>
+                <rect width="800" height="200" fill="url(#pb-fin)"/>
+                <circle cx="690" cy="60" r="120" fill="#34d399" opacity="0.08"/>
+                <text x="400" y="110" text-anchor="middle" font-family="monospace" font-size="64">📈</text>
+                <text x="400" y="165" text-anchor="middle" font-family="monospace" font-size="22" fill="#c770f0">finance-predictor</text>
+                <text x="30" y="40" font-family="monospace" font-size="18" fill="#7a5a9e">FastAPI · SQLAlchemy</text>
+              </svg>
             </div>
-            <h3 class="project-title">Cloud File Storage Engine (AWS S3)</h3>
+            <div class="project-top">
+              <span class="project-badge">AI &amp; Full-Stack</span>
+              <span class="project-badge project-badge-live">LIVE</span>
+            </div>
+            <h3 class="project-title">Finance Predictor 3D</h3>
             <p class="project-problem">
-              High-throughput backend API utilizing AWS S3 SDK for direct file uploads, presigned URLs, and bucket management.
+              <strong>Problem:</strong> Financial predictions are usually locked inside spreadsheets and desktop tools with poor UX.
             </p>
 
             <div class="project-key-features">
-              <div class="feature-list-title">Key Implementation Features</div>
+              <div class="feature-list-title">Solution &amp; Key Features</div>
               <ul class="feature-list">
-                <li class="feature-item"><span>AWS SDK v3 S3 Bucket Integration</span></li>
-                <li class="feature-item"><span>Presigned Temporary Download URLs</span></li>
-                <li class="feature-item"><span>Multer Memory Stream Upload Handlers</span></li>
+                <li class="feature-item"><span>Interactive 3D web interface for real-time predictions</span></li>
+                <li class="feature-item"><span>FastAPI backend with Uvicorn and SQLAlchemy data layer</span></li>
+                <li class="feature-item"><span>Responsive, modern frontend experience</span></li>
               </ul>
             </div>
 
             <div class="project-stack">
-              <span class="stack-tag">Node.js</span>
-              <span class="stack-tag">AWS S3 SDK</span>
-              <span class="stack-tag">Express</span>
-              <span class="stack-tag">Multer</span>
+              <span class="stack-tag">FastAPI</span>
+              <span class="stack-tag">Uvicorn</span>
+              <span class="stack-tag">SQLAlchemy</span>
+              <span class="stack-tag">HTML / JS / CSS</span>
+              <span class="stack-tag">Render</span>
             </div>
 
             <div class="project-card-actions">
-              <a href="https://github.com/Ashish9123/cloud-file-storage-s3" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
-                <span>GitHub ↗</span>
+              <a href="https://github.com/Ashish9123/finance-predictor" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                <span>GitHub</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
               </a>
-              <button class="btn btn-secondary btn-sm" onclick="openProjectModal('cloud-storage')">
-                <span>View Details 🔍</span>
-              </button>
-            </div>
-          </article>
-
-          <!-- Project 6: E-Commerce API -->
-          <article class="project-card reveal stagger-6" data-category="backend">
-            <div class="project-top">
-              <span class="project-badge">REST API & Docker</span>
-            </div>
-            <h3 class="project-title">E-Commerce RESTful Backend API</h3>
-            <p class="project-problem">
-              RESTful microservice for product catalog querying, category pagination, and cart management backed by PostgreSQL.
-            </p>
-
-            <div class="project-key-features">
-              <div class="feature-list-title">Key Implementation Features</div>
-              <ul class="feature-list">
-                <li class="feature-item"><span>PostgreSQL Relational Connection Pool</span></li>
-                <li class="feature-item"><span>Containerized via Docker & Docker Compose</span></li>
-                <li class="feature-item"><span>Parameterized Query Protection</span></li>
-              </ul>
-            </div>
-
-            <div class="project-stack">
-              <span class="stack-tag">Express.js</span>
-              <span class="stack-tag">PostgreSQL</span>
-              <span class="stack-tag">Docker</span>
-              <span class="stack-tag">REST API</span>
-            </div>
-
-            <div class="project-card-actions">
-              <a href="https://github.com/Ashish9123/ecommerce-backend-api" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
-                <span>GitHub ↗</span>
+              <a href="https://finance-predictor-5i6p.onrender.com" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <span>Live Demo</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
               </a>
-              <button class="btn btn-secondary btn-sm" onclick="openProjectModal('ecommerce-api')">
-                <span>View Details 🔍</span>
+              <button class="btn btn-secondary btn-sm" onclick="openProjectModal('finance-predictor')">
+                <span>Details</span>
               </button>
             </div>
           </article>
@@ -573,27 +684,27 @@
         <div class="section-header reveal">
           <div class="section-eyebrow">// 04. Practical Background</div>
           <h2 class="section-title">Experience & <span class="purple">Practical Work</span></h2>
-          <p class="section-sub">Demonstrating practical software engineering execution through capstones and cloud deployments.</p>
+          <p class="section-sub">Demonstrating practical software engineering execution through projects and cloud deployments.</p>
         </div>
 
         <div class="exp-cards-grid">
           <div class="exp-card reveal stagger-1">
             <div class="exp-card-header">
-              <h3 class="exp-role-title">Software Developer & Cloud Engineering Projects</h3>
+              <h3 class="exp-role-title">Software Development Projects</h3>
               <span class="exp-type-badge">Hands-on Engineering</span>
             </div>
             <p class="exp-desc">
-              Designed, built, and deployed 6+ production-ready software applications spanning RESTful API services, relational SQL database modeling, JWT authentication microservices, and AWS EC2/S3 cloud hosting. Maintained clean version control workflows on GitHub.
+              Designed, built, and deployed 6 software applications covering RESTful API services, relational and NoSQL database modeling, AI-powered products, and cloud hosting on AWS, Render, and Vercel. Maintained clean version control workflows on GitHub with public source code and working live demos.
             </p>
           </div>
 
           <div class="exp-card reveal stagger-2">
             <div class="exp-card-header">
-              <h3 class="exp-role-title">Cloud Infrastructure & DevOps Environment Setup</h3>
-              <span class="exp-type-badge">AWS & Docker</span>
+              <h3 class="exp-role-title">Cloud Deployment & DevOps Practices</h3>
+              <span class="exp-type-badge">Cloud &amp; Containerization</span>
             </div>
             <p class="exp-desc">
-              Configured Linux-based AWS EC2 virtual servers, NGINX web server reverse proxies, process management via systemd, and Docker containerized development environments for reproducible build environments.
+              Deployed production applications on AWS cloud infrastructure, Render, and Vercel. Practiced Docker containerization, Linux server administration, and Git/GitHub source control for reproducible build and deployment environments.
             </p>
           </div>
         </div>
@@ -621,6 +732,24 @@
               </p>
             </div>
           </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">APR 2020 — MAR 2021</div>
+              <h3 class="timeline-institution">Diksha International School, Bhagalpur, Bihar</h3>
+              <div class="timeline-degree">Intermediate (Class XII) — Science Stream</div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">APR 2019 — MAR 2020</div>
+              <h3 class="timeline-institution">Diksha International School, Bhagalpur, Bihar</h3>
+              <div class="timeline-degree">Matriculation (Class X)</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -631,18 +760,18 @@
         <div class="contact-cta-card reveal-scale">
           <h2 class="contact-headline">Get In <span class="purple">Touch</span></h2>
           <p class="contact-sub">
-            I am currently seeking software developer, backend engineer, and cloud internship or entry-level opportunities. Reach out via email or send a quick inquiry below.
+            I am currently seeking software developer, backend engineer, and cloud internship or entry-level opportunities. Reach out via email, phone, or the quick form below.
           </p>
 
           <form id="contact-quick-form" class="contact-form-grid">
             <div>
               <label for="contact-name" class="contact-label">Your Name</label>
-              <input type="text" id="contact-name" class="contact-input" placeholder="e.g. Hiring Manager / Tech Lead" required />
+              <input type="text" id="contact-name" class="contact-input" placeholder="e.g. Hiring Manager / Tech Lead" autocomplete="name" required />
             </div>
 
             <div>
               <label for="contact-email" class="contact-label">Your Email</label>
-              <input type="email" id="contact-email" class="contact-input" placeholder="name@company.com" required />
+              <input type="email" id="contact-email" class="contact-input" placeholder="name@company.com" autocomplete="email" required />
             </div>
 
             <div class="contact-field-full">
@@ -657,7 +786,7 @@
 
             <div class="contact-field-full" style="text-align: center; margin-top: 0.5rem;">
               <button type="submit" class="btn btn-primary" style="min-width: 200px;">
-                <span>Send Email Inquiry ✉️</span>
+                <span>Send Email Inquiry</span>
               </button>
             </div>
           </form>
@@ -668,6 +797,11 @@
             <a href="mailto:ashishcb035@gmail.com" class="btn btn-secondary">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/></svg>
               <span>ashishcb035@gmail.com</span>
+            </a>
+
+            <a href="tel:+919123469432" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+91 91234 69432</span>
             </a>
 
             <a href="https://github.com/Ashish9123" target="_blank" rel="noopener" class="btn btn-secondary">
@@ -691,9 +825,17 @@
       <div class="footer-body">
         <h3>Designed &amp; Built by <span class="purple">Ashish Kumar</span></h3>
         <p class="footer-copy">© 2026 Ashish Kumar · Backend Engineering · Cloud Computing · REST APIs</p>
+        <p class="footer-copy" style="margin-top: 0.4rem;">
+          <a href="https://github.com/Ashish9123/portfolio" target="_blank" rel="noopener" style="text-decoration: underline; text-underline-offset: 3px;">View the source of this portfolio</a>
+        </p>
       </div>
     </div>
   </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
 
   <!-- PROJECT TECHNICAL DETAIL MODAL DIALOG -->
   <div class="modal-backdrop" id="project-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
@@ -715,7 +857,7 @@
         <h3 class="modal-title" id="resume-modal-title">Ashish Kumar — Official Resume</h3>
         <div style="display: flex; gap: 0.5rem; align-items: center;">
           <a href="./resume.pdf" download class="btn btn-primary btn-sm">
-            <span>Download PDF ⬇</span>
+            <span>Download PDF</span>
           </a>
           <button class="modal-close-btn" id="resume-modal-close-btn" aria-label="Close Resume Viewer">✕</button>
         </div>

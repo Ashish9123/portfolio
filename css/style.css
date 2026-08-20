@@ -19,7 +19,7 @@
 
   --text-primary: #f5f5f5;
   --text-secondary: #a588c0;
-  --text-muted: #7a5a9e;
+  --text-muted: #9d7fc0;
 
   --accent-cyan: #cd5ff8;
   --accent-purple: #c770f0;
@@ -170,6 +170,25 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+/* Skip link (accessibility) */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 2000;
+  background: var(--accent-purple);
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0 0 var(--radius-md) 0;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  left: 0;
+  position: fixed;
 }
 
 body {
@@ -316,11 +335,18 @@ a {
   font-size: 0.95rem;
   font-weight: 400;
   color: #fff;
-  padding: 0.8rem 1rem;
+  padding: 0.8rem 0.85rem;
   border-radius: var(--radius-pill);
   transition: all var(--transition-fast);
   position: relative;
   z-index: 1;
+}
+
+@media (min-width: 1080px) {
+  .nav-link {
+    font-size: 0.9rem;
+    padding: 0.8rem 0.7rem;
+  }
 }
 
 .nav-link::after {
@@ -419,6 +445,29 @@ a {
   z-index: 100;
 }
 
+.mobile-nav-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--bg-surface-2);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all var(--transition-fast);
+}
+
+.mobile-nav-close:hover {
+  background: var(--bg-surface-3);
+  color: var(--text-primary);
+}
+
 .mobile-nav-overlay.active .mobile-nav-drawer {
   transform: translateY(0);
 }
@@ -461,8 +510,7 @@ a {
 }
 
 .btn:focus {
-  box-shadow: none !important;
-  outline: none !important;
+  box-shadow: none;
 }
 
 .btn-primary {
@@ -581,6 +629,17 @@ a {
 
 .main-name {
   color: #cd5ff8;
+}
+
+.hero-role {
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  padding-left: 45px;
 }
 
 .home-intro {
@@ -985,6 +1044,82 @@ a {
   box-shadow: 0 4px 20px rgba(98, 54, 134, 0.4);
 }
 
+/* GitHub Stats Band */
+.gh-stats-band {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: var(--gradient-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.gh-stat {
+  padding: 0.25rem 1.25rem 0.25rem 0;
+  border-right: 1px solid var(--border-subtle);
+  margin-right: 0.75rem;
+}
+
+.gh-stat-value {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent-cyan);
+  line-height: 1.1;
+}
+
+.gh-stat-label {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  margin-top: 0.15rem;
+}
+
+.gh-stats-cta {
+  margin-left: auto;
+}
+
+/* ==========================================================================
+   BACK TO TOP
+   ========================================================================== */
+.back-to-top {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 900;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #623686;
+  border: 1px solid var(--border-accent);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-accent);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity var(--transition-normal), transform var(--transition-normal), visibility var(--transition-normal), background var(--transition-fast);
+}
+
+.back-to-top:hover {
+  background: #6d20c5d7;
+  transform: translateY(-2px);
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -992,7 +1127,7 @@ a {
 }
 
 .project-card {
-  background-color: initial;
+  background: var(--gradient-card);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   padding: 1.75rem;
@@ -1002,7 +1137,6 @@ a {
   transition: all 0.5s ease 0s;
   position: relative;
   color: #fff;
-  opacity: 0.9;
 }
 
 .project-card:hover {
@@ -1019,6 +1153,20 @@ a {
   margin-bottom: 1rem;
 }
 
+.project-banner {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  margin-bottom: 1.25rem;
+  line-height: 0;
+}
+
+.project-banner svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .project-badge {
   font-family: var(--font-mono);
   font-size: 0.72rem;
@@ -1028,6 +1176,12 @@ a {
   background: rgba(98, 54, 134, 0.35);
   padding: 0.25rem 0.65rem;
   border-radius: var(--radius-pill);
+}
+
+.project-badge-live {
+  color: var(--accent-emerald);
+  background: rgba(52, 211, 153, 0.1);
+  border: 1px solid rgba(52, 211, 153, 0.25);
 }
 
 .project-title {
@@ -1488,25 +1642,6 @@ a {
 /* ==========================================================================
    RESPONSIVE BREAKPOINTS
    ========================================================================== */
-@keyframes wave-animation {
-  0% { transform: rotate(0deg); }
-  10% { transform: rotate(14deg); }
-  20% { transform: rotate(-8deg); }
-  30% { transform: rotate(14deg); }
-  40% { transform: rotate(-4deg); }
-  50% { transform: rotate(10deg); }
-  60% { transform: rotate(0deg); }
-  100% { transform: rotate(0deg); }
-}
-
-.wave {
-  animation-name: wave-animation;
-  animation-duration: 2.1s;
-  animation-iteration-count: infinite;
-  transform-origin: 70% 70%;
-  display: inline-block;
-}
-
 @media (max-width: 992px) {
   .home-row {
     grid-template-columns: 1fr;
@@ -1555,7 +1690,8 @@ a {
   .hero-actions,
   .social-links-row,
   .typewriter-wrapper,
-  .badge-status {
+  .badge-status,
+  .hero-role {
     padding-left: 20px;
   }
   .typing-text {
@@ -1588,6 +1724,19 @@ a {
   .arch-arrow {
     transform: rotate(90deg);
   }
+  .gh-stats-band {
+    padding: 1rem;
+  }
+  .gh-stat {
+    border-right: none;
+    margin-right: 0;
+    padding-right: 0;
+    flex: 1 1 100%;
+  }
+  .gh-stats-cta {
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1603,6 +1752,17 @@ a {
   }
   .project-card-actions .btn {
     width: 100%;
+  }
+  .typewriter-wrapper {
+    max-width: 100%;
+  }
+  .typing-text {
+    white-space: normal;
+    font-size: 1.05em;
+    line-height: 1.4;
+  }
+  .typewriter-caret {
+    display: none;
   }
 }
 
